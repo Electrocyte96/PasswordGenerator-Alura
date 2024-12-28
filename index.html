@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
-    <title>Primera prueba</title>
+    <title>Generador de Contraseñas</title>
 </head>
 <body>
-    <div>
-        <div>
-            <textarea name="" id=""></textarea>
-            <textarea name="" id=""></textarea>
-        </div>
+    <div class="main">
+        <div class="todo">
+            <div class="todo_container">
+                <div>
+                    <div>
+                        <label for="digitos">Ingresa la longitud de tu nueva contraseña</label>
+                        <input id="digitos" type="number" min="8" max="50">
+                        <div>
+                            <button id="clean">
+                                <img src="assets/clean.svg">
+                            </button>
+                            <button id="go">
+                                <img src="assets/go.svg" alt="">
+                            </button>
+                        </div> <!--Dos botones-->
+                    </div> <!--Botones,label, input -->
+                </div>
+                <div>
+                    <textarea id="contrasena"></textarea>
+                    <button id="copiar">
+                        <img src="assets/clipboard-list.svg">
+                    </button>
+                </div> <!--Textarea + boton de copiar-->
+            </div> <!--Container -->
+        </div> <!-- Container todo -->
     </div>
+
+    <footer class="footer">
+        Desarrollado por Jesús J. Gracía
+    </footer>
 </body>
 </html>
